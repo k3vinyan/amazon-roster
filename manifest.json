@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "foster",
+  "version": "1.0",
+  "description": "Roster",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png"
+        },
+  "content_scripts": [
+   {
+      "matches": ["http://localhost:8000/drivers/roster/"],
+      "js": ["jquery-3.2.1.min.js", "jszip.min.js", "FileSaver.js", "myexcel.js", "roster.js" ]
+    }
+  ],
+  "background":
+  {
+    "scripts": ["jquery-3.2.1.min.js", "jszip.min.js", "FileSaver.js", "myexcel.js"]
+  }
+}
