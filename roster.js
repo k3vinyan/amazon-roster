@@ -5,13 +5,14 @@ $(function(){
   script.type = 'text/javascript';
   driversArray = [];
   
-  setTimeout(function(){ 
+  
      
   script.onload = function() {
        var $ = window.jQuery;
 
        $( document ).ready(function(){
 
+         setTimeout(function(){ 
          $('#pageRosterViewContent').prepend(
             optionButton('dlRoster', 'Roster Download', '#FFFFFF', '#cc0000', '5px')
           );
@@ -162,13 +163,14 @@ $(function(){
 
          return string;
        };
+           }, 6000);
 
 };
   
   
   
   
-  }, 3000);
+
 
   
    document.getElementsByTagName("head")[0].appendChild(script);
