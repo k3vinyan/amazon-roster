@@ -4,7 +4,9 @@ $(function(){
   script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
   script.type = 'text/javascript';
   driversArray = [];
-
+  
+  setTimeout(function(){ 
+     
   script.onload = function() {
        var $ = window.jQuery;
 
@@ -162,5 +164,12 @@ $(function(){
        };
 
 };
+  
+  
+  
+  
+  }, 3000);
+
+  
    document.getElementsByTagName("head")[0].appendChild(script);
 });
